@@ -11,17 +11,22 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Routes
-app.use("/", meRoute);
-
-// Default route
+// Default route 
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to My Profile API" });
 });
 
+// Other routes
+app.use("/", meRoute);
+
 // Connect to MongoDB then start server
-connectDB().then(() => {
-  app.listen(env.port, () => {
-    log(`Server listening on port ${env.port}`);
+connectDB()
+  .then(() => {
+    app.listen(env.port, () => {
+      log(`Server listening on port ${env.port}`);
+    });
+  })
+  .catch((error) => {
+    console.error("Failed to connect to MongoDB:", error);
+    process.exit(1);
   });
-});

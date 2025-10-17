@@ -37,6 +37,7 @@ USER_EMAIL=olatundeabdullah07@gmail.com
 USER_NAME=Olatunde Abdullah
 USER_STACK=Node.js/Express
 CAT_FACT_API=https://catfact.ninja/fact
+MONGO_URI=mongodb+srv://bellababs16:Olatunde28@cluster0.hosvmg2.mongodb.net/hng-profile-api?retryWrites=true&w=majority
 
 ### 4. Run the API in Development Mode
 npm run dev

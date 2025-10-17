@@ -2,7 +2,8 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export const env = {
-  port: process.env.PORT || 5000,
+  port: Number(process.env.PORT) || 5000,
+  mongoUri: process.env.MONGO_URI || "",
   email: process.env.USER_EMAIL || "olatundeabdullah07@gmail.com",
   name: process.env.USER_NAME || "Olatunde Abdullah",
   stack: process.env.USER_STACK || "Node.js/Express",
