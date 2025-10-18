@@ -1,10 +1,8 @@
 {
   "compilerOptions": {
-    //File Layout
     "rootDir": "./",
     "outDir": "./dist",
 
-    //Target Environment
     "module": "CommonJS",
     "target": "ES2020",
     "lib": ["ESNext"],
@@ -14,7 +12,6 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
 
-    //Strictness & Type Safety 
     "strict": true,
     "noImplicitAny": true,
     "forceConsistentCasingInFileNames": true,
@@ -22,13 +19,10 @@
     "exactOptionalPropertyTypes": true,
     "noFallthroughCasesInSwitch": true,
 
-    //Debugging
     "sourceMap": true,
-
-    //Optional Modern Settings
     "isolatedModules": true,
     "moduleDetection": "force"
   },
-  "include": ["src", "index.ts"],
+  "include": ["index.ts", "src/**/*"],
   "exclude": ["node_modules", "dist"]
 }
