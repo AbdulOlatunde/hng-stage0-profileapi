@@ -5,8 +5,10 @@ import app from "./src/server";
 
 const startServer = async () => {
   try {
-    app.listen(env.port, () => {
-      log(`Server running on http://localhost:${env.port}`);
+    const PORT = process.env.PORT || env.port || 5000;
+
+    app.listen(PORT, () => {
+      log(`[Profile API] Server running on http://localhost:${PORT}`);
     });
   } catch (error) {
     console.error("Failed to start the server:", error);
