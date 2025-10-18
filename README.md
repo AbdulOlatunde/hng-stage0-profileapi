@@ -24,7 +24,7 @@ This project demonstrates API creation, environment variable management, and ext
 # Getting Started
 
 ### 1. Clone the Repository
-git clone https://github.com/<your-username>/profile-api.git
+git clonehttps://github.com/AbdulOlatunde/hng-stage0-profileapi
 cd profile-api
 
 ### 2. Install Dependencies
@@ -41,22 +41,17 @@ MONGO_URI=mongodb+srv://bellababs16:Olatunde28@cluster0.hosvmg2.mongodb.net/hng-
 
 ### 4. Run the API in Development Mode
 npm run dev
-This command starts the server with live reloading using ts-node-dev.
 
 ### 5. Build the Project
 npm run build
-This compiles the TypeScript source code into JavaScript inside the dist folder.
 
 ### 6. Start the Compiled Server
 npm start
-When successful, you should see output like this in your terminal:
-Server running on http://localhost:5000
 
 ### API Documentation
 ### Endpoint: /me
 
 ### Method: GET
-Fetches a random cat fact and displays my profile details.
 
 ### Example Of Request
 GET http://localhost:5000/me
